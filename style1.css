@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+*{
+	font-family: 'poppins',sans-serif;
+	
+}
+body{
+	background-image: url(https://images.unsplash.com/photo-1528465424850-54d22f092f9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.header {
+	background-color: #3498db;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+footer{
+	left: 0px;
+	bottom: 0px;
+	margin-bottom: 0px;
+	position:initial;
+	color: white;
+	border: 1px solid black;
+	background-color: #363535;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+}
+#city{
+	color: white;
+	font-size: 30px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	width: 300px;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+.search {
+	text-align: center;
+	padding: 10px;
+}
+
+
+.search input[type="text"] {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.search button[type="submit"] {
+	padding: 10px;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.search button:hover{
+	background-color: crimson;
+}
+
+.forecast {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.weather-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	margin: 20px 0;
+
+}
+
+.weather {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	padding: 20px;
+	border: 2px solid white;
+	border-radius: 5px;
+	background-color: #4867be;
+	box-shadow: 10px 10px 10px #141212;
+	margin: 20px;
+	width: 150px;
+	font-size: 10px;
+}
+.weather:hover{
+	background-color: #f8fafa;
+	border: 2px solid black;
+
+}
+
+.weather .day {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.weather .icon {
+	margin: 5px;
+}
+
+.weather img {
+	width: 100px;
+	height: 100px;
+}
+
+.weather .details {
+	text-align:left;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+h2{
+	color: #fff;
+}
+

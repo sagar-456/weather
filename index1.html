@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Forecast</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	
+</head>
+<body>
+	<div class="header">
+		<h1>Weather Forecast</h1>
+	</div>
+	
+	<div class="search">
+		<form>
+			<input type="text" placeholder="Enter City" id="txtcity"/>
+			<button type="submit">Search</button>
+		</form>
+	</div>
+	<i class="fa-solid fa-location-pin fa-beat fa-lg" style="color: #e70d0d;"></i>
+	
+	<h4 id="city">Location</h4>
+	<div class="forecast">
+		<h2>5-Day Weather Forecast</h2>
+		<div class="weather-list">
+			<div class="weather">
+				<div class="day">Weather</div>
+				<div class="icon">
+					<img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon">
+				</div>
+				<div class="details">
+					<!-- <p><strong>Temperature:</strong> 25&deg;C</p>
+					<p><strong>Humidity:</strong> 70%</p>
+					<p><strong>Wind:</strong> 5 km/h</p>
+					<p><strong>condition:</strong></p>
+					 -->
+				</div>
+			</div> 
+		</div> 
+	</div>
+	
+	<footer>copyright &copy; Weather Forecast. All rights reserved!</footer>
+    <script src="proj.js"></script>
+</body>
+</html>
