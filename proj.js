@@ -1,9 +1,10 @@
-// Replace YOUR_API_KEY with your actual API key
+
 const apiKey = "6579c5bb01e790b040208979f622434a";
 OnloadLocation();
 // Get the form element and add an event listener for form submission
 const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
+  debugger
   event.preventDefault();
   const city = document.getElementById("txtcity").value;
    if(city!="" && city != undefined && city != null){
@@ -16,6 +17,7 @@ document.getElementById("city").textContent = myValue;
  }
 });
 function OnloadLocation(){
+  debugger
 navigator.geolocation.getCurrentPosition((position) => {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
@@ -34,12 +36,14 @@ navigator.geolocation.getCurrentPosition((position) => {
 }
 async function getWeatherData(city) {
   const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`);
-
+  
   const data = await response.json();
   console.log(data);
+ 
   
   const forecastList = document.querySelector(".weather-list");
   forecastList.innerHTML = "";
+
   data.list.forEach((item) => {
     // Convert timestamp to date and time string
     const dateTime = new Date(item.dt* 1000).toLocaleString();
@@ -90,12 +94,16 @@ async function getWeatherData(city) {
   });
 }
 async function getWeather(lat, lon) {
+  debugger
   const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`);
   const data = await response.json();
   console.log(data);
   
   const forecastList = document.querySelector(".weather-list");
   forecastList.innerHTML = "";
+  const myValue = data.city.name; 
+  document.getElementById("city").textContent = myValue;
+ 
   
  
   data.list.forEach((item) => {
